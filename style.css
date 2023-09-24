@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {box-sizing:border-box;font-family: 'Poppins', sans-serif; margin: 0; padding: 0;}
+
+/* Container for skill bars */
+.container {
+
+  background-color: #ddd; /* Grey background */
+  width: 55%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+  .step1Skill{width: 0%; background-color: #ff0000;}
+  .percent0{width:10%; display: flex; justify-content: end;}
+  .step2Skill{width: 20%; background-color: #ff0000;}
+  .percent20{width:20%; display: flex; justify-content: end;}
+  .step3Skill{width: 30%; background-color: #ff0000;}
+  .percent30{width:30%; display: flex; justify-content: end;}
+  .step4Skill{width: 50%; background-color: #ff0000;}
+  .percent50{width:50%; display: flex; justify-content: end;}
+  .step5Skill{width: 90%; background-color: #ff0000;}
+  .percent90{width:90%; display: flex; justify-content: end;}
+  .step6Skill{width: 100%; background-color: #ff0000;}
+  .percent100{width:100%; display: flex; justify-content: end;}
+
+/* Style the tab */
+  .tabContainer{
+  width:80%!important;
+  margin:auto!important;
+  text-align: center;
+  }
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin: auto;
+  width: 70%;
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: #3c429d;
+  float: left;
+  border-top: 1px solid lightgray;
+  color: #fff;
+  outline: none;
+  flex: 1;
+  border: none;
+  border-top:1px solid #8898f8;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: flex;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.tab button i{
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #8898f8;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #edf0f8;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.tabcontent h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-container{
+width: 55%;
+margin: auto;
+}
+
+
+.iframe-container{
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.percent p{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 767px){
+    .tabcontent h1{
+        font-size: 26px;
+    }
+
+}
